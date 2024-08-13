@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <ul>
+        <li><a routerLink='' routerLinkActive="router-link-active">Trang chủ</a></li>
+        <li><a routerLink="/about" routerLinkActive="router-link-active">About Us</a></li>
+    </ul>
+    <button class="cart" (click)="toggleCart()">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-count">{{cartCount}}</span>
+    </button>
+</nav>
+
+<!-- Dropdown giỏ hàng -->
+<div *ngIf="isCartVisible" class="cart-dropdown">
+    <div *ngFor="let item of cartItems">
+        <p>{{ item.name }} - {{ item.price | currency }}</p>
+    </div>
+    <p><strong>Total: {{ totalPrice | currency }}</strong></p>
+    <p-button label="Thanh Toán" icon="pi pi-check" size="small" [rounded]="true" severity="info" (onClick)="checkOut()"/>
+</div>

@@ -1,0 +1,37 @@
+.chat-button {
+    background-color: #2b877a;
+    /* Set the background color */
+    border: none;
+    border-radius: 20px;
+    /* Rounded edges */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Padding around the text */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed; /* Make the button fixed on the screen */
+    bottom: 70px; /* Position it 20px from the bottom */
+    right: 70px; /* Position it 20px from the right */
+}
+
+.chat-button i.icon-chat {
+    margin-right: 8px;
+    font-style: normal;
+    /* Reset font style for the icon */
+    /* background-image: url('path_to_your_icon_image.png'); */
+    background-size: cover;
+    width: 20px;
+    /* Icon width */
+    height: 20px;
+    /* Icon height */
+    display: inline-block;
+}
+
+/* Optional: Add hover effect */
+.chat-button:hover {
+    background-color: #1f6f63;
+    /* Darken on hover */
+}

@@ -1,0 +1,16 @@
+<img [src]="imagePath" alt="BackGroung Image" style="width: 1903px;">
+<div class="container">
+    <h1 class="title">NEW ARRIVALS ARE HERE</h1>
+    <p class="subtitle">Limited time price drop!</p>
+</div>
+<div class="product-grid">
+    <div *ngFor="let item of productList">
+        <app-product-items [product]="item" (viewDetail)="showDialog()">
+        </app-product-items>
+    </div>
+</div>
+<div class="card flex justify-content-center">
+    <p-dialog header="Detail" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+        <p>Lorem ipsum dolor sit amet...</p>
+    </p-dialog>
+</div>

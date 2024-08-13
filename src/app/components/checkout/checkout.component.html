@@ -1,0 +1,15 @@
+<div class="checkout-contact-container">
+    <div class="about-section">
+        <h2>Giỏ hàng của bạn</h2>
+        <ul>
+            <li *ngFor="let item of cartItems">
+              {{ item.name }} - {{ formatPrice(item.price) }}
+            </li>
+        </ul>
+        <h2>Total: {{formatPrice(totalPrice)}}</h2>
+        <p-button label="Thanh Toán" icon="pi pi-check" size="small" [rounded]="true" severity="info"/>
+    </div>
+    <div class="contact-section">
+        <img [src]="imagePath">
+    </div>
+</div>

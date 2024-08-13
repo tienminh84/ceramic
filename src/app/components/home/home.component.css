@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    text-align: center;
+    background-color: white;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #388E8E;
+    /* Choose a color close to the one in the image */
+}
+
+.subtitle {
+    font-size: 1em;
+    color: #388E8E;
+    margin-top: 10px;
+}

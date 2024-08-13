@@ -1,0 +1,59 @@
+.subscribe-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Add a background color to cover content behind */
+    padding: 20px 0; /* Optional padding */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better separation */
+    border: none;
+}
+
+h2 {
+    color: #336666;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #336666;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.email-input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+    font-size: 16px;
+    color: #666666;
+    background-color: #f8f5f5;
+}
+
+.join-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #336666;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.join-button:hover {
+    background-color: #264d4d;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.footer h3 {
+    color: #336666;
+    margin: 0;
+}
+
+.footer p {
+    color: #666666;
+    margin: 5px 0 0;
+}
