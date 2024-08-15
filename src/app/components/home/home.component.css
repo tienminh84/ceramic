@@ -19,3 +19,43 @@
     color: #388E8E;
     margin-top: 10px;
 }
+
+.product-info {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+    gap: 1rem;
+    /* Space between image and text */
+}
+
+.product-image-container {
+    flex-shrink: 0;
+    /* Prevent the image from shrinking */
+}
+
+.product-image {
+    width: 200px;
+    /* Adjust the size as needed */
+    height: auto;
+    object-fit: cover;
+    /* Ensure the image covers the area */
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.product-colors,
+.product-price {
+    margin: 0.5rem 0;
+}
+
+.product-description {
+    width: 300px;
+}

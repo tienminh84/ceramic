@@ -15,7 +15,7 @@ export class CheckoutComponent {
   imagePath: string = './assets/background3.jpg';
   totalPrice: number = 0;
 
-  cartItems: Product[] = [];
+  @Input() cartItems: Product[] = [];
 
   constructor(private cartService: CartService) {}
 
