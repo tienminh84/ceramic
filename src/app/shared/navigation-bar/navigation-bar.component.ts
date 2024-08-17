@@ -15,7 +15,7 @@ import { ButtonModule } from 'primeng/button';
 export class NavigationBarComponent {
   cartCount = 0;
   isCartVisible = false;
-  cartItems: Product[] = [];
+  cartItems: { product: Product; quantity: number }[] = [];
   totalPrice = 0;
 
   constructor(

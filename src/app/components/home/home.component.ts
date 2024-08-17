@@ -5,16 +5,19 @@ import { Product } from '../model/model';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { CartService } from '../../services/cart-service.service';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgFor, ProductItemsComponent, DialogModule, ButtonModule, NgIf],
+  imports: [NgFor, ProductItemsComponent, DialogModule, ButtonModule, NgIf, InputNumberModule, FormsModule, ReactiveFormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
   visible = false;
+  quantity = 0;
   imagePath: string = './assets/background.jpg';
   selectedProduct: Product = {
     productId: 1,
@@ -98,9 +101,9 @@ export class HomeComponent {
     this.selectedProduct = product;
   }
 
-  addToCart(product: Product) {
+  addToCart(product: Product, quantity: number) {
     console.log('Added to cart:', product);
-    this.cartService.addToCart(product);
+    this.cartService.addToCart(product, quantity);
     this.visible = false;
   }
 }
