@@ -1,10 +1,12 @@
+.subscribe-component {
+    display: flex;
+    margin-top: auto;
+}
+
 .subscribe-container {
+    margin: auto;
     text-align: center;
     font-family: Arial, sans-serif;
-    background-color: white; /* Add a background color to cover content behind */
-    padding: 20px 0; /* Optional padding */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better separation */
-    border: none;
 }
 
 h2 {
@@ -42,18 +44,4 @@ h2 {
 
 .join-button:hover {
     background-color: #264d4d;
-}
-
-.footer {
-    margin-top: auto;
-}
-
-.footer h3 {
-    color: #336666;
-    margin: 0;
-}
-
-.footer p {
-    color: #666666;
-    margin: 5px 0 0;
 }

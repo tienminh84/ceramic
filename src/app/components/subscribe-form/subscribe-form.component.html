@@ -1,13 +1,14 @@
-<div class="subscribe-container">
+<div class="subscribe-component">
+  <div class="subscribe-container">
     <h2>Subscribe Form</h2>
     <div class="subscribe-form">
       <input type="email" placeholder="e.g., email@example.com" class="email-input" [(ngModel)]="email">
       <button class="join-button" [style]="{'background-color': isClicked}" (click)="onClicked()">Join</button>
     </div>
-    <div class="footer">
+    <div>
       <h3>Papa Ceramic</h3>
       <p>info&#64;mysite.com</p>
     </div>
+  </div>
 </div>
 <app-login [(visible)]="isDialogVisible" [email]="email"></app-login>
-  

@@ -1,9 +1,14 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html,
 body {
+    display: flex;
+    min-height: 100vh;
     height: 100%;
     margin: 0;
     padding: 0;

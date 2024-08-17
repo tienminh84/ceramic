@@ -1,4 +1,4 @@
-<img [src]="imagePath" alt="BackGroung Image" style="width: 1903px;">
+<img [src]="imagePath" alt="BackGroung Image" style="width: 118.95rem;">
 <div class="container">
     <h1 class="title">NEW ARRIVALS ARE HERE</h1>
     <p class="subtitle">Limited time price drop!</p>
@@ -10,7 +10,7 @@
     </div>
 </div>
 <div class="card flex justify-content-center">
-    <p-dialog header="Detail" [modal]="true" [(visible)]="visible" [style]="{ width: '70rem' }">
+    <p-dialog header="Detail" [modal]="true" [(visible)]="visible" [style]="{ width: '65rem' }">
         <div *ngIf="selectedProduct" class="product-info">
             <div class="product-details">
                 <h2 class="product-title">{{ selectedProduct.name }}</h2>
@@ -22,9 +22,23 @@
                 <img [src]="selectedProduct.image" alt="{{ selectedProduct.name }}" class="product-image" style="width: 40rem; height: inherit;">
             </div>
         </div>
-
+        <div class="card flex flex-wrap gap-3 p-fluid" style="width: 15rem;">
+            <div class="flex-auto">
+                <label class="mb-2 block font-bold" for="minmax-buttons">
+                    Quantity:
+                </label>
+                <p-inputNumber 
+                    [(ngModel)]="quantity"
+                    mode="decimal" 
+                    [showButtons]="true" 
+                    inputId="minmax-buttons" 
+                    [min]="0" 
+                    [max]="100" />
+            </div>
+        </div>
+        
         <p-button label="Add To Cart" icon="pi pi-check" size="small" [rounded]="true" severity="info"
-            (onClick)="addToCart(selectedProduct)" />
+            (onClick)="addToCart(selectedProduct, quantity)" />
     </p-dialog>
 </div>
 <!-- <app-bootstrap-dialog></app-bootstrap-dialog> -->

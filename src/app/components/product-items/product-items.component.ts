@@ -14,12 +14,13 @@ import { DialogModule } from 'primeng/dialog';
 export class ProductItemsComponent {
   @Input() product!: Product;
   visible = false;
+  quantity = 1;
   @Output() viewDetail: EventEmitter<any> = new EventEmitter();
 
   constructor(private cartService: CartService) {}
 
-  addToCart(product: Product) {
-    this.cartService.addToCart(product);
+  addToCart(product: Product, quantity:number) {
+    this.cartService.addToCart(product, quantity);
   }
 
   showDialog() {

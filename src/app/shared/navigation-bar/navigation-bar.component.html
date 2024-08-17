@@ -12,7 +12,7 @@
 <!-- Dropdown giỏ hàng -->
 <div *ngIf="isCartVisible" class="cart-dropdown">
     <div *ngFor="let item of cartItems">
-        <p>{{ item.name }} - {{ item.price | currency }}</p>
+        <p>{{ item.product.name }}: {{ item.product.price| currency }} - Quantity: {{item.quantity}}</p>
     </div>
     <p><strong>Total: {{ totalPrice | currency }}</strong></p>
     <p-button label="Thanh Toán" icon="pi pi-check" size="small" [rounded]="true" severity="info" (onClick)="checkOut()"/>

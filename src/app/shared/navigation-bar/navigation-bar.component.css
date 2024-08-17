@@ -5,10 +5,10 @@
     background-color: #4A827A;
     padding: 10px 20px;
     position: fixed;
-    width: 1903px;
+    width: 118rem;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    top: 0;
+    margin-bottom: 5rem;
 }
 
 .navbar ul {
